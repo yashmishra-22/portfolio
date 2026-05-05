@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Mishra | Portfolio</title>
+    <meta name="description" content="Learning, building, and growing as a developer every day.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-mode">
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container container">
+            <a href="#" class="logo">Port<span>folio</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <i data-lucide="sun" class="sun-icon"></i>
+                </button>
+                <div class="hamburger">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content" data-animate="slide-up">
+                <h1 class="hero-title"
+                    style="font-size: clamp(2.8rem, 8vw, 3.8rem); margin-bottom: clamp(1rem, 4vw, 1.5rem); margin-top: 0;">
+                    Yash Mishra</h1>
+                <p class="hero-subtitle"
+                    style="font-size: clamp(1.1rem, 4vw, 1.25rem); line-height: 1.8; margin-bottom: 0;">
+                    <strong>🎓 Student<br>💻 Web Developer<br>🤖 AI Explorer</strong>
+                </p>
+                <div
+                    style="margin-top: clamp(1.2rem, 4vw, 1.8rem); display: inline-flex; align-items: center; gap: 8px; padding: clamp(0.5rem, 2vw, 0.6rem) clamp(0.9rem, 3vw, 1.2rem); background-color: var(--bg-secondary); border-radius: 50px; border: 1px solid var(--border-color); font-size: clamp(0.9rem, 3vw, 1rem); color: var(--text-secondary); box-shadow: var(--shadow-sm);">
+                    <i data-lucide="sparkles" style="color: var(--primary); width: 20px; height: 20px;"></i>
+                    <span><em>Learning, building, and growing as a developer every day.</em></span>
+                </div>
+
+                <div style="margin-top: clamp(2rem, 6vw, 3rem);">
+                    <p
+                        style="color: var(--text-secondary); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: clamp(0.8rem, 3vw, 1.2rem);">
+                        Core Tools</p>
+                    <div style="display: flex; gap: clamp(0.6rem, 2vw, 1rem); flex-wrap: wrap;">
+                        <span
+                            style="display: inline-flex; align-items: center; gap: 8px; padding: clamp(0.4rem, 2vw, 0.6rem) clamp(0.8rem, 3vw, 1.2rem); background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; font-size: clamp(0.85rem, 3vw, 0.95rem); font-weight: 600; color: var(--text-primary); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;"
+                            onmouseover="this.style.transform='translateY(-3px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <i data-lucide="bot" style="width: 20px; height: 20px; color: var(--primary);"></i> ChatGPT
+                            & Claude
+                        </span>
+                        <span
+                            style="display: inline-flex; align-items: center; gap: 8px; padding: clamp(0.4rem, 2vw, 0.6rem) clamp(0.8rem, 3vw, 1.2rem); background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; font-size: clamp(0.85rem, 3vw, 0.95rem); font-weight: 600; color: var(--text-primary); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;"
+                            onmouseover="this.style.transform='translateY(-3px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <i data-lucide="palette" style="width: 20px; height: 20px; color: var(--accent);"></i> Canva
+                        </span>
+                        <span
+                            style="display: inline-flex; align-items: center; gap: 8px; padding: clamp(0.4rem, 2vw, 0.6rem) clamp(0.8rem, 3vw, 1.2rem); background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; font-size: clamp(0.85rem, 3vw, 0.95rem); font-weight: 600; color: var(--text-primary); box-shadow: var(--shadow-sm); transition: transform 0.2s ease;"
+                            onmouseover="this.style.transform='translateY(-3px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <i data-lucide="code" style="width: 20px; height: 20px; color: #10B981;"></i> Scratch
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-animate="fade-in" style="transform: scale(0.85); transform-origin: center;">
+                <div class="blob-bg"></div>
+                <img src="assets/hero.png" alt="Yash Mishra working on laptop">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Me Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="slide-up">
+                <span class="subtitle">Discover</span>
+                <h2>About <span class="highlight">Me</span></h2>
+            </div>
+            <div class="about-content" data-animate="fade-in">
+                <div class="about-text">
+                    <p>Hello! I am a student who recently completed my 10th grade in the academic year 2025–26. I have a
+                        strong interest in web development and enjoy building modern, responsive websites.</p>
+                    <p>I also use AI tools to enhance my workflow and create smarter solutions. I am constantly learning
+                        new technologies and improving my skills to grow as a developer.</p>
+                    <div class="about-interests">
+                        <span class="interest-tag"><i data-lucide="code"></i> Web Development</span>
+                        <span class="interest-tag"><i data-lucide="bot"></i> Artificial Intelligence</span>
+                        <span class="interest-tag"><i data-lucide="palette"></i> Creative Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-animate="slide-up">
+                <span class="subtitle">Expertise</span>
+                <h2>My <span class="highlight">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-animate="slide-up" style="--delay: 0.1s">
+                    <div class="card-header">
+                        <i data-lucide="bot"></i>
+                        <h3>AI & Productivity</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span>ChatGPT</span></li>
+                        <li><span>Claude</span></li>
+                        <li><span>Prompt Engineering</span></li>
+                        <li><span>AI Workflow Optimization</span></li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-animate="slide-up" style="--delay: 0.2s">
+                    <div class="card-header">
+                        <i data-lucide="palette"></i>
+                        <h3>Creative & Design</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span>Canva</span></li>
+                        <li><span>Basic Editing</span></li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-animate="slide-up" style="--delay: 0.3s">
+                    <div class="card-header">
+                        <i data-lucide="code"></i>
+                        <h3>Programming Basics</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span>Scratch (Logic Building)</span></li>
+                        <li><span>Game Development</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="slide-up">
+                <span class="subtitle">Portfolio</span>
+                <h2>Featured <span class="highlight">Projects</span></h2>
+            </div>
+
+            <h3 class="projects-category" data-animate="slide-up"
+                style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">Group Projects</h3>
+            <div class="projects-grid" style="margin-bottom: 4rem;">
+                <!-- Project 1 -->
+                <div class="project-card" data-animate="fade-in" style="--delay: 0.1s">
+                    <div class="project-img">
+                        <div class="img-placeholder">2D Zombie Hunter</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>2D Zombie Hunter</h3>
+                        <p>An interactive 2D action game built using Scratch where players hunt zombies and survive
+                            enemy attacks. Demonstrates game logic, animation, and user interaction.</p>
+                        <p style="font-size: 0.875rem; margin-bottom: 1rem; color: var(--text-secondary);">
+                            <strong>Role:</strong> Developed core game logic and coding</p>
+                        <div class="tech-stack">
+                            <span>Scratch</span>
+                        </div>
+                        <a href="https://scratch.mit.edu/projects/1024816145/" target="_blank"
+                            class="btn btn-outline">View Project <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-animate="fade-in" style="--delay: 0.2s">
+                    <div class="project-img">
+                        <div class="img-placeholder">Brain Master</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Brain Master</h3>
+                        <p>A logic-based mind game built using Scratch that challenges users with thinking and
+                            problem-solving tasks.</p>
+                        <p style="font-size: 0.875rem; margin-bottom: 1rem; color: var(--text-secondary);">
+                            <strong>Role:</strong> Implemented game logic and coding</p>
+                        <div class="tech-stack">
+                            <span>Scratch</span>
+                        </div>
+                        <a href="https://scratch.mit.edu/projects/1021121177/" target="_blank"
+                            class="btn btn-outline">View Project <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="projects-category" data-animate="slide-up"
+                style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">Solo Projects</h3>
+            <div class="projects-grid">
+                <!-- Project 3 -->
+                <div class="project-card" data-animate="fade-in" style="--delay: 0.3s">
+                    <div class="project-img">
+                        <div class="img-placeholder">Infinity Rides</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Infinity Rides</h3>
+                        <p>A modern website showcasing a rides-based concept with a clean UI and responsive design,
+                            built using AI-assisted tools.</p>
+                        <div class="tech-stack">
+                            <span>ChatGPT</span>
+                            <span>Antigravity</span>
+                        </div>
+                        <a href="https://infinity-rides.vercel.app/" target="_blank" class="btn btn-outline">View
+                            Project <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-animate="fade-in" style="--delay: 0.4s">
+                    <div class="project-img">
+                        <div class="img-placeholder">Birthday Surprise</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Birthday Surprise Website</h3>
+                        <p>A creative and interactive birthday website focused on personalization and user experience.
+                        </p>
+                        <div class="tech-stack">
+                            <span>ChatGPT</span>
+                            <span>Antigravity</span>
+                        </div>
+                        <a href="https://birthday-eight-iota-63.vercel.app/" target="_blank"
+                            class="btn btn-outline">View Project <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-animate="slide-up">
+                <span class="subtitle">Milestones</span>
+                <h2>My <span class="highlight">Achievements</span></h2>
+            </div>
+            <div style="text-align: center; color: var(--text-secondary); padding: 2rem 0;" data-animate="fade-in">
+                <p>I will add my achievements here soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats section-padding bg-light">
+        <div class="container stats-container">
+            <div class="stat-item" data-animate="scale-up">
+                <h2 class="stat-number" data-target="4">0</h2><span>+</span>
+                <p class="stat-label">Projects Completed</p>
+            </div>
+            <div class="stat-item" data-animate="scale-up" style="--delay: 0.2s">
+                <h2 class="stat-number" data-target="3">0</h2><span>+</span>
+                <p class="stat-label">Skills Learned</p>
+            </div>
+            <div class="stat-item" data-animate="scale-up" style="--delay: 0.4s">
+                <h2 class="stat-text">Beginner</h2>
+                <p class="stat-label">Experience Level</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header" data-animate="slide-up">
+                <span class="subtitle">Get in Touch</span>
+                <h2>Let's <span class="highlight">Connect</span></h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-animate="fade-in">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to
+                        connect.</p>
+                    <div class="contact-methods">
+                        <a href="#" class="method">
+                            <div class="icon-box"><i data-lucide="mail"></i></div>
+                            <span>(I will add later)</span>
+                        </a>
+                        <a href="#" class="method">
+                            <div class="icon-box"><i data-lucide="linkedin"></i></div>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="#" class="method">
+                            <div class="icon-box"><i data-lucide="github"></i></div>
+                            <span>GitHub Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-animate="fade-in" style="--delay: 0.2s">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="How can I help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Send Message <i
+                                data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Yash <span>Mishra</span></div>
+            <p>&copy; 2026 Yash Mishra. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
