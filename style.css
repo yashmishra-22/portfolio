@@ -806,20 +806,21 @@ nav.scrolled {
         justify-content: center;
     }
     
-    .skills-grid {
-        grid-template-columns: 1fr 1fr;
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
-    
-    .contact-info .section-title {
-        text-align: center;
+
+    .project-card {
+        max-width: 100%;
     }
-    
-    .contact-methods {
-        justify-content: center;
+
+    .project-info {
+        padding: 2rem;
     }
-    
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
+
+    .stat-card {
+        padding: 2rem 1.5rem;
     }
 }
 
@@ -828,16 +829,16 @@ nav.scrolled {
         display: none;
     }
     
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .section-gap {
         padding: 80px 0;
     }
     
     .hero-name {
         font-size: 3.5rem;
+    }
+    
+    .project-img-box {
+        height: 200px;
     }
     
     .footer-grid {
